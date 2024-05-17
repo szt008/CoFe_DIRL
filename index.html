@@ -1,48 +1,518 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Paper</title>
-    <style>
-        /* 在这里添加你的 CSS 样式 */
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 20px;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        main {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1 {
-            color: #333;
-        }
-        p {
-            margin-bottom: 20px;
-        }
-    </style>
+
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>GTRL</title>
+  <link rel="icon" type="image/x-icon" href="static/images/wenhui.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
 </head>
 <body>
-    <header>
-        <h1>My Paper Title</h1>
-        <p>Author: Your Name</p>
-    </header>
-    <main>
-        <section>
-            <h2>Abstract</h2>
-            <p>This is the abstract of my paper...</p>
-        </section>
-        <section>
-            <h2>Introduction</h2>
-            <p>This section introduces the topic of the paper...</p>
-        </section>
-        <!-- Add more sections for different parts of your paper -->
-    </main>
-</body>
-</html>
+    
+
+  <!--
+  <audio src="./static/audios/ON_TOP_Instrumental.mp3" controls preload="auto" autoplay loop>	
+    <iframe src="./static/audios/ON_TOP_Instrumental.mp3" allow="autoplay" id="audio"></iframe>
+  </audio> -->
+
+  <audio src="./static/audios/ON_TOP_Instrumental.mp3" controls preload="auto" loop>	
+    <iframe src="./static/audios/ON_TOP_Instrumental.mp3" id="audio"></iframe>
+  </audio>
+    
+      <section class="hero">
+        <div class="hero-body">
+          <div class="container is-max-desktop">
+            <div class="columns is-centered">
+              <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">Uncertainty-aware Reinforcement Learning for Autonomous Driving with Multimodal Digital Driver Guidance</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">Wenhui Huang</span>,
+                <span class="author-block">Zitong Shan</span>,
+                  <span class="author-block">Shanhe Lou</span>,
+                    <span class="author-block">
+                      <a href="https://scholar.google.com/citations?user=UKVs2CEAAAAJ&hl=ko" target="_blank">Chen Lv</a> 
+                    </span>                <!-- 
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Wenhui Huang</a></span>
+                <span class="author-block">
+                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Zitong Shan</a></span>
+                  <span class="author-block">
+                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Shanhe Lou</a>
+                    <span class="author-block">
+                      <a href="Fourth AUTHOR PERSONAL LINK" target="_blank">Chen Lv</a> 
+                    </span>
+                  </span>-->
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block">Nanyang Technological University<br>Submitted to ICRA 2024</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                      <!-- Arxiv PDF link -->
+                      <!-- 
+                      <span class="link-block">
+                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span> -->
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="https://youtu.be/P4XWiXknpDA" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <!-- <i class="fa fa-youtube-play"></i> -->
+                        <i class="fab fa-youtube"></i>
+                      </span>
+                      <span>Youtude</span>
+                    </a>
+                  </span>
+
+                  <!-- BiliBili link -->
+                  <span class="link-block">
+                    <a href="https://www.bilibili.com/video/BV1TC4y1o75U" target="_blank"
+                    class="external-link button is-normal is-rounded is-black">
+                    <span class="icon">
+                      <i class="fa fa-tv"></i>
+                    </span>
+                    <span>BiliBili</span>
+                  </a>
+                </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://github.com/OscarHuangWind/Learning-from-Intervention" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <!-- 
+                  <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>-->
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <h2 class="title has-text-centered">
+        Learning from Multimodal Guidance (LfMG).
+      </h2>
+      <h2 class="subtitle has-text-centered">
+        Approach Overview. (Check the full video below)
+      </h2>
+      
+      <div class="content has-text-justified">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/Approach_Overview.mp4"
+        type="video/mp4">
+      </video>
+    </div>
+  </div>
+  </div>
+</section>
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            While existing Learning from intervention (LfI) methods within the human-in-the-loop reinforcement learning (HiL-RL) paradigm mainly operate on the assumption that human policies are homogeneous and deterministic with low variance, natural human driving behaviors are multimodal with intrinsic uncertainties, and hence, accommodating diverse human capabilities is significant for its practical applications. This work proposes an enhanced LfI approach for learning the optimal RL policy by leveraging multimodal human behaviors in the setting of N-driver concurrent interventions. Specifically, We first learn the N number of human digital drivers from the multi-human demonstration dataset, wherein each driver possesses its own policy distribution. Then, the post-trained drivers will be kept in the training loop of the RL algorithms and provide multimodal driving guidance whenever the intervention is required. Additionally, to better utilize the provided guidance, we augment the RL regarding the fundamental architecture and optimization objectives to facilitate the proposed uncertainty-aware reinforcement learning (UnaRL) algorithm. The proposed approach, which won 2$^{nd}$ place in the Alibaba Future Car Innovation Challenge 2022, is solidly compared in two challenging autonomous driving scenarios against state-of-the-art (SOTA) LfI baselines, and results of both simulation and real-world experiment confirm the superiority of our method in terms of learning robustness and driving performance. Videos and source code are provided.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3"> Preview </h2>
+      </div>
+    
+      <div id="results-carousel" class="carousel results-carousel">
+       <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Framework.PNG" alt="MY ALT TEXT"/ class="center">
+        <h2 class="subtitle has-text-centered">
+          Universal Framework of Learning from Multimodal Guidance.
+        </h2>
+      </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Demonstration.PNG" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          Multi-human Demonstration.
+        </h2>
+      </div>
+     <div class="item">
+       <!-- Your image here -->
+       <img src="static/images/Scenario.png" alt="MY ALT TEXT"/ >
+       <h2 class="subtitle has-text-centered">
+        Autonomous Driving Scenario.
+      </h2>
+    </div>
+      <div class="item">
+        <!-- Your image here -->
+        <img src="static/images/Training Curve.PNG" alt="MY ALT TEXT"/ >
+        <h2 class="subtitle has-text-centered">
+         Benchmark Comparison.
+       </h2>
+     </div>
+     <div class="item">
+      <!-- Your image here -->
+      <img src="static/images/AR Test.PNG" alt="MY ALT TEXT"/>
+      <h2 class="subtitle has-text-centered">
+        Real-world Experiment.
+      </h2>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3"> Simulation </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="item item-fullbody column">
+          <div class="columns is-centered has-text-centered">
+            <h2 class="title is-4"> &emsp; &emsp; &emsp; &emsp; &emsp; Unprotected Left Turn </h2>
+          </div>
+          <video poster="" id="fullbody1" autoplay playsinline controls muted loop width="75%"
+            style="float: right;">
+            <source src="static/videos/1LT.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-fullbody column">
+          <div class="columns is-centered has-text-centered">
+            <h2 class="title is-4"> Highway Ramp Merge &emsp; &emsp; &emsp; &emsp; &emsp;</h2>
+          </div>
+          <video poster="" id="fullbody2" autoplay playsinline controls muted loop width="75%">
+            <source src="static/videos/1RM.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+      <div class="columns">
+        <div class="item item-fullbody column">
+          <video poster="" id="fullbody1" autoplay playsinline controls muted loop width="75%"
+            style="float: right;">
+            <source src="static/videos/2LT.mp4" type="video/mp4">
+          </video>
+        </div>
+        
+        <div class="item item-fullbody column">
+          <video poster="" id="fullbody2" autoplay playsinline controls muted loop width="75%">
+            <source src="static/videos/2RM.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+     
+      <div class="columns">
+        <div class="item item-fullbody column">
+          <video poster="" id="fullbody1" autoplay playsinline controls muted loop width="75%"
+            style="float: right;">
+            <source src="static/videos/4LT.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <div class="item item-fullbody column">
+          <video poster="" id="fullbody2" autoplay playsinline controls muted loop width="75%">
+            <source src="static/videos/4RM.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+      
+      <div class="columns">
+        <div class="item item-fullbody column">
+          <video poster="" id="fullbody1" autoplay playsinline controls muted loop width="75%"
+            style="float: right;">
+            <source src="static/videos/3LT.mp4" type="video/mp4">
+          </video>
+        </div>
+      
+        <div class="item item-fullbody column">
+          <video poster="" id="fullbody2" autoplay playsinline controls muted loop width="75%">
+            <source src="static/videos/3RM.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+     
+    </div>
+  </div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="columns is-centered has-text-centered">
+      <h2 class="title is-3"> Real World Experiment </h2>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns">
+        <div class="item item-fullbody column">
+          <div class="columns is-centered has-text-centered">
+            <h2 class="title is-4"> &emsp; &emsp; &emsp; &emsp; &emsp; Yield </h2>
+          </div>
+          <video poster="" id="fullbody1" autoplay playsinline controls muted loop width="75%"
+            style="float: right;">
+            <source src="static/videos/Exp1.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <div class="item item-fullbody column">
+          <div class="columns is-centered has-text-centered">
+            <h2 class="title is-4"> Pass &emsp; &emsp; &emsp; &emsp; &emsp;</h2>
+          </div>
+          <video poster="" id="fullbody2" autoplay playsinline controls muted loop width="75%">
+            <source src="static/videos/Exp2.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Video carousel -->
+<!--
+<section class="hero is-small">
+      <div class="hero-body">
+        <div class="container">
+          <h2 class="title is-3">Another Carousel</h2>
+          <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-video1">
+              <video poster="" id="video1" autoplay controls muted loop height="100%">
+                <source src="static/videos/carousel1.mp4"
+                type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video2">
+              <video poster="" id="video2" autoplay controls muted loop height="100%">
+                <source src="static/videos/carousel2.mp4"
+                type="video/mp4">
+              </video>
+            </div>
+            <div class="item item-video3">
+              <video poster="" id="video3" autoplay controls muted loop height="100%">\
+                <source src="static/videos/carousel3.mp4"
+                type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+-->
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> -->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+<!--
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Video Presentation (Unmute audio to enjoy the Video) </h2>
+      </div>
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+         <div class="publication-video">
+           <!-- Youtube embed code here -->
+           <iframe src="https://www.youtube.com/embed/P4XWiXknpDA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+         </div>
+    </div>
+    </div>
+  </div>
+</div>
+</section>
+
+
+<section class="hero is-light">
+<div class="hero-body">
+ <div class="container">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Ablation Study</h2>
+         <h2 class="subtitle has-text-centered">
+            Effectiveness of Adaptive Confidence Adjustment Module.
+         </h2>
+          <div class="item">
+           <img src="static/images/ablation.png" alt="MY ALT TEXT"/ class="center">
+          </div>
+            <h2 class="subtitle">
+            <div class="content has-text-justified">
+               <br> We employ ten digital drivers whose success rates are between 50% and 70% to concurrently intervene in vehicle control and compare our method against PHIL-RL regarding the robustness of policy optimization and post-trained driving policy in the Ramp Merge scenario.<br>
+               <br> The converge speed of UnaRL completely dominates that of PHIL-RL with a large margin when the human guidance possesses high uncertainties. By observing both the reward curve and intervention rate curve, we can see that even though the intervention rate of PHIL-RL drops as fast as the UnaRL, the driving performance of PHIL-RL does not consistently improve at the same pace as our approach. It is because the PHIL-RL method underestimates the multi-modality of human guidance, blindly imitating human policy regardless of its uncertainties. On the contrary, our approach demonstrates superior data efficiency and converging performance even under diverse and multimodal guidance behaviors. Such robustness can be attributed to the design of the adaptive confidence adjustment module, which adaptively adjusts the confidence (weights) of learning objectives based on guidance policy and mixture variances. 
+            </div>
+            </h2>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</section>
+
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered has-text-centered">
+        <h2 class="title is-3">Previous Work: Preference-Guided Deep Q-Network (PGDQN)
+          <span class="link-block">
+            <a href="https://github.com/OscarHuangWind/Preference-Guided-DQN-Atari" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+              <span>TNNLS</span>
+            </a>
+          </span>
+        </h2>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          Wellcome <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1078062/t/13"></script>
+            <p>
+              <br>This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+              Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html
