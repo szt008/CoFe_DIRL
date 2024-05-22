@@ -234,6 +234,25 @@
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
+
+      <style>
+    .columns {
+        display: flex;
+        justify-content: space-between; /* 平均分布 */
+        align-items: flex-start; /* 顶部对齐 */
+    }
+
+    .item {
+        width: 30%; /* 每个视频容器宽度为30% */
+        margin-bottom: 20px; /* 下边距 */
+    }
+
+    .item video {
+        width: 100%; /* 视频宽度100% */
+        display: block; /* 块级显示 */
+    }
+</style>
+      
       <div class="columns">
         <div class="item item-fullbody column">
           <video poster="" id="fullbody1" autoplay playsinline controls muted loop width="75%"
