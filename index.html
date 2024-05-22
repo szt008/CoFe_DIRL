@@ -219,61 +219,6 @@
 
 
 
-<head>
-<meta charset="UTF-8">
-<title>Image with Three Videos</title>
-<style>
-    .container {
-        display: flex; /* 启用Flexbox */
-        align-items: flex-start; /* 垂直对齐顶部 */
-    }
-    .video-container {
-        display: flex; /* 启用Flexbox */
-        flex-direction: column; /* 垂直排列视频和标题 */
-        justify-content: space-between; /* 视频和标题之间均匀分配空间 */
-    }
-    .video-item {
-        display: flex; /* 启用Flexbox */
-        width: 30%; /* 每个视频占据容器宽度的30% */
-        margin-right: 10px; /* 右侧间距 */
-    }
-    video {
-        width: 100%; /* 视频宽度100% */
-    }
-    img {
-        max-width: 100%; /* 图片宽度不超过容器宽度 */
-        height: auto; /* 保持原始高度宽高比 */
-    }
-</style>
-</head>
-<body>
-<div class="container">
-    <!-- 图片部分 -->
-    <img src="your-image-url.jpg" alt="Sample Image">
-
-    <!-- 视频部分 -->
-    <div class="video-container">
-        <div class="video-item">
-            <h3 class="title">视频标题1</h3>
-            <video src="your-video-url1.mp4" controls></video>
-        </div>
-        <div class="video-item">
-            <h3 class="title">视频标题2</h3>
-            <video src="your-video-url2.mp4" controls></video>
-        </div>
-        <div class="video-item">
-            <h3 class="title">视频标题3</h3>
-            <video src="your-video-url3.mp4" controls></video>
-        </div>
-    </div>
-</div>
-</body>
-
-
-
-
-
-
 
 
 
