@@ -45,6 +45,19 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 
+  <style>
+        .video-container {
+            display: flex;
+            justify-content: center; /* 水平居中 */
+            align-items: center; /* 垂直居中 */
+            height: 400px; /* 固定高度 */
+        }
+        .video-container video {
+            max-width: 100%; /* 视频最大宽度100% */
+            max-height: 100%; /* 视频最大高度100% */
+        }
+   </style>
+
    
   
 </head>
@@ -234,6 +247,10 @@
   </div>
 </section>
 
+  <div class="video-container">
+        <video src="video.mp4" controls></video>
+    </div>
+
 
 <section class="hero is-light is-small">
   <div class="item item-fullbody column">
@@ -242,6 +259,8 @@
           </video>
         </div>
 </section>
+
+  
 
 <section class="hero is-small">
   <div class="hero-body">
