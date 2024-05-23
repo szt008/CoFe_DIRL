@@ -45,68 +45,7 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 
-    <style>
-        .image-container {
-            display: flex;  /* 使用flexbox布局，使得图片并排 */
-            justify-content: center;  /* 图片居中显示 */
-            align-items: center;  /* 图片垂直居中 */
-        }
-        .image-container img {
-            width: 20%;  /* 每张图片占容器宽度的30% */
-            margin: 20px;  /* 图片之间的间距 */
-        }
-    </style>
-
-  <meta charset="UTF-8">
-<title>3x3 Video Grid Layout</title>
-<style>
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr); /* 3列等宽 */
-        grid-gap: 20px; /* 网格间距 */
-    }
-
-    .grid-item {
-        display: flex;
-        justify-content: center; /* 水平居中 */
-        align-items: center; /* 垂直居中 */
-        height: 200px; /* 固定高度 */
-    }
-
-    .grid-item video {
-        max-width: 100%; /* 视频最大宽度100% */
-        max-height: 100%; /* 视频最大高度100% */
-    }
-</style>
-
-
-  <meta charset="UTF-8">
-    <title>Media Grid Layout</title>
-    <style>
-        .media-container {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr); /* 3列等宽 */
-            grid-gap: 20px; /* 网格间距 */
-        }
-
-        .media-item {
-            display: flex;
-            justify-content: center; /* 水平居中 */
-            align-items: center; /* 垂直居中 */
-            height: 500px; /* 固定高度 */
-            margin: 20px; /* 保持一些间距 */
-        }
-
-        .media-item img, .media-item video {
-            max-width: 100%; /* 最大宽度100% */
-            max-height: 100%; /* 最大高度100% */
-        }
-
-        /* 图片特定样式 */
-        .image-container img {
-            width: 100%; /* 让图片充满容器 */
-        }
-    </style>
+   
   
 </head>
 <body>
@@ -295,82 +234,13 @@
   </div>
 </section>
 
-  <div class="media-container">
-        <!-- 图片部分 -->
-        <div class="media-item image-container">
-            <img src="static/image/F_scenario_1.png" alt="Image 1">
-        </div>
-        <div class="media-item image-container">
-            <img src="static/image/F_scenario_2.png" alt="Image 2">
-        </div>
-        <div class="media-item image-container">
-            <img src="static/image/F_scenario_3.png" alt="Image 3">
-        </div>
 
-        <!-- 视频部分 -->
-        <div class="media-item">
-            <video src="static/image/video/highway1.mp4" controls></video>
-        </div>
-        <div class="media-item">
-            <video src="static/image/video/highway2.mp4" controls></video>
-        </div>
-        <div class="media-item">
-            <video src="static/image/video/highway3.mp4" controls></video>
-        </div>
-    </div>
-  
-
-<div class="image-container">
-        <img src="static/image/F_scenario_1.png" alt="Image 1">
-        <img src="static/image/F_scenario_2.png" alt="Image 2">
-        <img src="static/image/F_scenario_3.png" alt="Image 3">
-</div>
-  
-
-<div class="grid-container">
-    <div class="grid-item">
-        <video src="your-video-url1.mp4" controls></video>
-    </div>
-    <div class="grid-item">
-        <video src="your-video-url2.mp4" controls></video>
-    </div>
-    <div class="grid-item">
-        <video src="your-video-url3.mp4" controls></video>
-    </div>
-    <div class="grid-item">
-        <video src="your-video-url4.mp4" controls></video>
-    </div>
-    <div class="grid-item">
-        <video src="your-video-url5.mp4" controls></video>
-    </div>
-    <div class="grid-item">
-        <video src="your-video-url6.mp4" controls></video>
-    </div>
-    <div class="grid-item">
-        <video src="your-video-url7.mp4" controls></video>
-    </div>
-    <div class="grid-item">
-        <video src="your-video-url8.mp4" controls></video>
-    </div>
-    <div class="grid-item">
-        <video src="your-video-url9.mp4" controls></video>
-    </div>
-</div>
-
-
-
+<section class="hero is-light is-small">
   <div class="item item-fullbody column">
           <video poster="" id="fullbody2" autoplay playsinline controls muted loop width="75%">
-            <source src="static/videos/4RM.mp4" type="video/mp4">
+            <source src="static/video/Simulation.mp4" type="video/mp4">
           </video>
         </div>
-      </div>
-      
-      
-      </div>
-     
-    </div>
-  </div>
 </section>
 
 <section class="hero is-small">
